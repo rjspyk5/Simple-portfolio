@@ -102,7 +102,20 @@ nav{
     display: block;
 }
 
+.about-me{
+    background-color:#FFF8F3 ;
+    margin: 10% 0;
+    text-align: center;
+    padding: 80px;
+}
 
+/* About me style */
+.card-container{
+    margin: 4% auto;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-around;
+}
 
 @media screen and (max-width:576px) {
     .margin-left-right-200{
@@ -140,7 +153,13 @@ nav{
     width: 100%;
 }
     
+.card-container{
+    grid-template-columns: repeat(1,auto);
 
+}
+.card{
+    margin: 5% 0;
+}
 
 }
 
@@ -165,4 +184,12 @@ nav{
         width: 100%;
     }
      
+    .card-container{
+        grid-template-columns: repeat(2,auto);
+    
+    }
+    .card{
+        margin: 12% 0;
+    }
+
 }
